@@ -8,5 +8,19 @@ namespace RealEstate
 {
     internal class Buyer
     {
+        public string nameBuyer { get; private set; }
+        public string surnameBuyer { get; private set; }
+        public void BuyFlat(Flat flat)
+        {
+
+        }
+        public void FlatOffer(System system)
+        {
+
+        }
+        public void BuyerInterface(System System)
+        {
+
+        }
     }
 }
