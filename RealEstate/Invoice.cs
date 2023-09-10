@@ -15,7 +15,7 @@ namespace RealEstate
         private int sizeFlat { get; set; }
         private int floorFlat { get; set; }
         private bool paid { get; set; }
-        private string indicationFlat { get; set; }
+        public string indicationFlat { get; private set; }
         private uint priceFlat { get; set; }
         public Invoice(string nameBuyer, string surnameBuyer, int sizeFlat, int floorFlat, bool paid, string indicationFlat, uint priceFlat)
         {
@@ -28,9 +28,6 @@ namespace RealEstate
             this.indicationFlat = indicationFlat;
             this.priceFlat = priceFlat;
         }
-        private void SendToSystem(System system)
-        {
-            
-        }
+
     }
 }

@@ -1,0 +1,15 @@
+D:\Visual Studio Projects\RealEstate\RealEstate\bin\Debug\net7.0\RealEstate.exe
+D:\Visual Studio Projects\RealEstate\RealEstate\bin\Debug\net7.0\RealEstate.deps.json
+D:\Visual Studio Projects\RealEstate\RealEstate\bin\Debug\net7.0\RealEstate.runtimeconfig.json
+D:\Visual Studio Projects\RealEstate\RealEstate\bin\Debug\net7.0\RealEstate.dll
+D:\Visual Studio Projects\RealEstate\RealEstate\bin\Debug\net7.0\RealEstate.pdb
+D:\Visual Studio Projects\RealEstate\RealEstate\obj\Debug\net7.0\RealEstate.csproj.AssemblyReference.cache
+D:\Visual Studio Projects\RealEstate\RealEstate\obj\Debug\net7.0\RealEstate.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio Projects\RealEstate\RealEstate\obj\Debug\net7.0\RealEstate.AssemblyInfoInputs.cache
+D:\Visual Studio Projects\RealEstate\RealEstate\obj\Debug\net7.0\RealEstate.AssemblyInfo.cs
+D:\Visual Studio Projects\RealEstate\RealEstate\obj\Debug\net7.0\RealEstate.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projects\RealEstate\RealEstate\obj\Debug\net7.0\RealEstate.dll
+D:\Visual Studio Projects\RealEstate\RealEstate\obj\Debug\net7.0\refint\RealEstate.dll
+D:\Visual Studio Projects\RealEstate\RealEstate\obj\Debug\net7.0\RealEstate.pdb
+D:\Visual Studio Projects\RealEstate\RealEstate\obj\Debug\net7.0\RealEstate.genruntimeconfig.cache
+D:\Visual Studio Projects\RealEstate\RealEstate\obj\Debug\net7.0\ref\RealEstate.dll
