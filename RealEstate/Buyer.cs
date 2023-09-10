@@ -10,6 +10,11 @@ namespace RealEstate
     {
         public string nameBuyer { get; private set; }
         public string surnameBuyer { get; private set; }
+        public Buyer(string nameBuyer, string surnameBuyer)
+        {
+            this.nameBuyer = nameBuyer;
+            this.surnameBuyer = surnameBuyer;
+        }
         public void BuyFlat(Flat flat)
         {
 
