@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace RealEstate
 {
-    internal interface IInvoice
+    internal interface IFlat
     {
+
+
     }
 }

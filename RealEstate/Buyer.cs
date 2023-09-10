@@ -18,7 +18,7 @@ namespace RealEstate
         {
 
         }
-        public void BuyerInterface(System System)
+        public void BuyerInterface(System system)
         {
 
         }
