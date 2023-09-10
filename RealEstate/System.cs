@@ -8,8 +8,8 @@ namespace RealEstate
 {
     internal class System
     {
-        public List<ApartmentBuilding> ApartmentBuildings { get; private set; }
-        public List<Invoice> Invoices { get; private set; }
+        public List<ApartmentBuilding> ApartmentBuildings { get; set; }
+        public List<Invoice> Invoices { get; set; }
         Administrator Administrator;
         public System()
         {
