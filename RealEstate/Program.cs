@@ -28,3 +28,4 @@ admin.system = system;
 
 Buyer buyer = new Buyer("Adam", "Bartl", system);
 buyer.BuyerInterface();
+Console.ReadKey();
