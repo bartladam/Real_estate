@@ -8,12 +8,18 @@ namespace RealEstate
 {
     internal class ApartmentBuilding
     {
+        /// <summary>
+        /// Apartment building name help us recognize this apartment building from other buildings
+        /// </summary>
         public string nameApartment { get; private set; }
-        public List<Flat> flats { get; set; }
+        /// <summary>
+        /// Apartment building has a lot of flats to possible buy it
+        /// </summary>
+        public List<IFlat> flats { get; set; }
         public ApartmentBuilding(string nameApartment, params Flat[] flats)
         {
             this.nameApartment = nameApartment;
-            this.flats = new List<Flat>(flats);
+            this.flats = new List<IFlat>(flats);
         }
 
 

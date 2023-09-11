@@ -8,18 +8,32 @@ namespace RealEstate
 {
     internal class SystemApartment
     {
+        /// <summary>
+        /// System manages apartment bulding
+        /// </summary>
         public ApartmentBuilding ApartmentBuildings { get; set; }
+        /// <summary>
+        /// System have to know about all transaction on flats
+        /// </summary>
         public List<Invoice> Invoices { get; set; }
+        /// <summary>
+        /// Each system should have a some Administrator
+        /// </summary>
         Administrator Administrator;
         public SystemApartment(ApartmentBuilding apartmentBuildings)
         {
             this.ApartmentBuildings = apartmentBuildings;
             this.Invoices = new List<Invoice>();
         }
-        public string FlatOffer(int orders)
+        /// <summary>
+        /// It shows buyers sorted flats
+        /// </summary>
+        /// <param name="sort"></param>
+        /// <returns></returns>
+        public string FlatOffer(int sort)
         {
-            string resultOrder = "";
-            switch(orders)
+            string resultSort = "";
+            switch(sort)
             {
                 case 1:
                     var orderSize = from i in ApartmentBuildings.flats
@@ -27,7 +41,7 @@ namespace RealEstate
                                 select i;
                     foreach (var item in orderSize)
                     {
-                        resultOrder += string.Format("Indication flat: {0} | avaible: {1}\nsize flat: {2} m2 | floor flat: {3}\nprice flat: {4}\n\n", item.indicationFlat, item.avaible, item.sizeFlat, item.floorFlat, item.priceFlat);
+                        resultSort += string.Format("Indication flat: {0} | avaible: {1}\nsize flat: {2} m2 | floor flat: {3}\nprice flat: {4}\n\n", item.indicationFlat, item.available, item.sizeFlat, item.floorFlat, item.priceFlat);
                     }
 
                     break;
@@ -37,31 +51,39 @@ namespace RealEstate
                                      select i;
                     foreach (var item in orderPrice)
                     {
-                        resultOrder += string.Format("Indication flat: {0} | avaible: {1}\nsize flat: {2} m2 | floor flat: {3}\nprice flat: {4}\n\n", item.indicationFlat, item.avaible, item.sizeFlat, item.floorFlat, item.priceFlat);
+                        resultSort += string.Format("Indication flat: {0} | avaible: {1}\nsize flat: {2} m2 | floor flat: {3}\nprice flat: {4}\n\n", item.indicationFlat, item.available, item.sizeFlat, item.floorFlat, item.priceFlat);
                     }
                     break;
                 case 3:
                     var orderAvaibility = from i in ApartmentBuildings.flats
-                                     where (i.avaible.Equals(true))
+                                     where (i.available.Equals(true))
                                      select i;
                     foreach (var item in orderAvaibility)
                     {
-                        resultOrder += string.Format("Indication flat: {0} | avaible: {1}\nsize flat: {2} m2 | floor flat: {3}\nprice flat: {4}\n\n", item.indicationFlat, item.avaible, item.sizeFlat, item.floorFlat, item.priceFlat);
+                        resultSort += string.Format("Indication flat: {0} | avaible: {1}\nsize flat: {2} m2 | floor flat: {3}\nprice flat: {4}\n\n", item.indicationFlat, item.available, item.sizeFlat, item.floorFlat, item.priceFlat);
                     }
                     break;     
             }
-            return resultOrder;
+            return resultSort;
 
         }
+        /// <summary>
+        /// When buyer want some flat, system find this flat in database 
+        /// </summary>
+        /// <param name="indicationFlat"></param>
+        /// <returns></returns>
         public Flat SelectedFlat(string indicationFlat)
         {
             foreach (Flat item in ApartmentBuildings.flats)
             {
-                if (item.indicationFlat.Equals(indicationFlat) && item.avaible.Equals(true))
+                if (item.indicationFlat.Equals(indicationFlat) && item.available.Equals(true))
                     return item;
             }
             return null;
         }
+        /// <summary>
+        /// If someone buy the flat, so system change availability flat
+        /// </summary>
         public void AvailabilityFlat()
         {
             foreach (Invoice invoice in Invoices)

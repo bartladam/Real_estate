@@ -8,6 +8,9 @@ namespace RealEstate
 {
     internal class Administrator
     {
+        /// <summary>
+        /// Administrator manages system apartment building
+        /// </summary>
         public SystemApartment system;
     }
 }

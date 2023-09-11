@@ -8,7 +8,12 @@ namespace RealEstate
 {
     internal interface IFlat
     {
-
+        bool available { get; }
+        uint priceFlat { get; }
+        int sizeFlat { get; }
+        int floorFlat { get; }
+        string indicationFlat { get; }
+        void BuyFlat();
 
     }
 }
