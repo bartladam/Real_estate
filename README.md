@@ -1,4 +1,4 @@
-# Real_estate
+  # Real_estate
 USED SKILLS
 -------------
 1) OOP
@@ -12,7 +12,7 @@ USED SKILLS
 9) XML COMMENT
 10) UML
 
-NOTE
+NOTES:
 -------------
 * I know, thats while(true) in my program has infinity cycle, but its under control, because between next cycle is code with some Console.Writeline etc.
 * .NET 7
