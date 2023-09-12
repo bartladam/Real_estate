@@ -14,4 +14,5 @@ USED SKILLS
 
 NOTE
 -------------
-I know, thats while(true) in my program has infinity cycle, but its under control, because between next cycle is code with some Console.Writeline etc.
+* I know, thats while(true) in my program has infinity cycle, but its under control, because between next cycle is code with some Console.Writeline etc.
+* .NET 7
